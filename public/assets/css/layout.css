@@ -1,0 +1,61 @@
+@media screen and (max-width : 991px) {
+    #navbar .container {
+        height: 10vh;
+        background-color: red;
+    }
+}
+
+#navbar {
+    height: 100px;
+    background-color: #ffffff;
+}
+
+#navbar .container{
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+
+
+}
+
+#navbar .container .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#navbar .container .logo .logo-init {
+    font-size: 1.1em;
+    padding: 13px;
+    border-radius: 100px ;
+    background-color: #F1D7C0;
+    font-weight: bold;
+}
+
+#navbar .container .logo .logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar .container .logo .logo-text .logo-titre {
+    font-size: 1.4em;
+    font-weight: bold;
+    
+}
+#navbar .container .logo .logo-text .logo-desc {
+    font-size: 1em;
+    color: #6B7280;
+
+}
+
+#navbar .container .nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 0.9em;
+}
