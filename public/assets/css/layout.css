@@ -1,61 +1,81 @@
-@media screen and (max-width : 991px) {
-    #navbar .container {
-        height: 10vh;
-        background-color: red;
-    }
+
+/* ===========================
+   HEADER & NAVBAR
+   =========================== */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-#navbar {
+.navbar {
     height: 100px;
-    background-color: #ffffff;
-}
-
-#navbar .container{
-
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-top: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-between;
-
-
-}
-
-#navbar .container .logo {
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
-#navbar .container .logo .logo-init {
-    font-size: 1.1em;
-    padding: 13px;
-    border-radius: 100px ;
-    background-color: #F1D7C0;
-    font-weight: bold;
-}
-
-#navbar .container .logo .logo-text {
+.navbar .container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-#navbar .container .logo .logo-text .logo-titre {
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.logo-circle:hover {
+    opacity: 0.9;
+}
+
+.brand-name {
     font-size: 1.4em;
     font-weight: bold;
-    
-}
-#navbar .container .logo .logo-text .logo-desc {
-    font-size: 1em;
-    color: #6B7280;
-
+    color: var(--color-dark);
+    margin: 0;
 }
 
-#navbar .container .nav-links {
-    display: flex;
-    gap: 30px;
-    align-items: center;
+.brand-tagline {
     font-size: 0.9em;
+    color: var(--color-gray);
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
 }

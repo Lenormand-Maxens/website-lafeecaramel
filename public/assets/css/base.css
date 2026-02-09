@@ -1,13 +1,37 @@
+/* ===========================
+   RESET ET VARIABLES
+   =========================== */
+
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
-    color: #333;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --color-primary: #D4A574;
+    --color-secondary: #E8D4C4;
+    --color-accent: #F5E6DD;
+    --color-dark: #3D3D3D;
+    --color-light: #FEFCF8;
+    --color-gray: #8B8B8B;
+    --color-border: #E8DDD2;
 }
 
 body {
-    font-family: "poppins", sans-serif;
-    background-color: #FDFAF6;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    line-height: 1.6;
+}
+
+/* ===========================
+   CONTAINER
+   =========================== */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
