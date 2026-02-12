@@ -1,0 +1,319 @@
+body {
+    padding-top: 100px;
+}
+
+/* ===========================
+   SECTION HOME
+   =========================== */
+
+#home {
+    padding: 40px 0 80px 0;
+    background: linear-gradient(135deg, #f8f8fe 0%, #ddddf5 100%);
+}
+
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--color-dark);
+    font-weight: 700;
+}
+
+.hero-text h1 .highlight {
+    color: var(--color-primary);
+}
+
+.hero-text p {
+    font-size: 1.1em;
+    color: var(--color-gray);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+
+.btn-secondary {
+    background-color: white;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+
+.hero-image {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================
+   GESTION TIKCETS 
+   =========================== */
+
+.show-ticket #container #link-add a.btn.btn-primary {
+    margin-top: 20px;
+}
+
+   /* TABLE TICKETS */
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+
+.ticket-table th,
+.ticket-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.ticket-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+.ticket-table tr:hover {
+    background-color: #fafafa;
+}
+
+/* STATUS */
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.status.open {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.status.closed {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+.status.pending {
+    background-color: #fff3e0;
+    color: #f57c00;
+}
+
+/* MESSAGE VIDE */
+.message {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+
+/* ===========================
+   SHOW-USER
+   =========================== */
+
+#show-user {
+    padding: 40px 0;
+}
+
+/* Bouton ajouter */
+#show-user .link-add {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* Tableau */
+#show-user table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#show-user th,
+#show-user td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#show-user th {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Boutons dans le tableau */
+#show-user .btn {
+    padding: 6px 12px;
+    font-size: 0.7em;
+}
+
+/* ===========================
+   USER-FORM
+   =========================== */
+
+#modify-user {
+    padding: 40px 0;
+}
+
+/* Formulaire */
+#modify-user .user-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Titre */
+#modify-user h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Groupe de champs */
+#modify-user .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Inputs */
+#modify-user input[type="text"],
+#modify-user input[type="email"],
+#modify-user input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Boutons */
+#modify-user .btn {
+    text-align: center;
+    padding: 8px;
+}
+
+/* ===========================
+   ADD-USER
+   =========================== */
+
+#add-user {
+    padding: 40px 0;
+}
+
+/* Formulaire */
+#add-user .user-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Titre */
+#add-user h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Groupe de champs */
+#add-user .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Inputs */
+#add-user input[type="text"],
+#add-user input[type="email"],
+#add-user input[type="password"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Boutons */
+#add-user .btn {
+    padding: 8px;
+    text-align: center;
+}
+
+/* ===========================
+   CREATE TICKET
+   =========================== */
+
+#add-ticket {
+    padding: 60px 0;
+}
+
+.ticket-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ticket-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Inputs */
+.ticket-form input[type="text"],
+.ticket-form textarea,
+.ticket-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: border 0.3s ease;
+}
+
+.ticket-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Focus effect */
+.ticket-form input:focus,
+.ticket-form textarea:focus,
+.ticket-form select:focus {
+    outline: none;
+    border-color: #1976d2;
+}
+
+/* Buttons spacing */
+.ticket-form .btn {
+    width: 100%;
+    text-align: center;
+}
+
+.ticket-form .btn-secondary {
+    margin-top: 5px;
+}

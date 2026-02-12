@@ -78,7 +78,7 @@ require_once __DIR__ . '/../includes/header.php';
                     </div>
                 </div>
                 <div>
-                    <img src="./assets/images/cire-epilatoire.png" alt="Image de nos produits" class="produits-image">
+                    <img src="./assets/images/cirefeecaramel.png" alt="Image de nos produits" class="produits-image">
                 </div>
             </div>
         </div>
@@ -108,6 +108,55 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
         </div>
     </section>
+    <section id="galerie">
+        <div class="container">
+            <div class="galerie-wrapper">
+                <div class="card">
+                    <img src="./assets/images/galerie/galerie-cile.webp" alt="Image de notre histoire" class="histoire-image">
+                </div>
+                <div class="card">
+                    <img src="./assets/images/galerie/galerie-cire.jpg" alt="Image de notre histoire" class="histoire-image">
+                </div>
+                <div class="card">
+                    <img src="./assets/images/galerie/galerie-crane.jpeg" alt="Image de notre histoire" class="histoire-image">
+                </div>
+                <div class="card">
+                    <img src="./assets/images/galerie/galerie-dos.jpeg" alt="Image de notre histoire" class="histoire-image">
+                </div>
+                <div class="card">
+                    <img src="./assets/images/galerie/galerie-epilation.jpg" alt="Image de notre histoire" class="histoire-image">
+                </div>
+                <div class="card">
+                    <img src="./assets/images/galerie/galerie-maquillage.jpg" alt="Image de notre histoire" class="histoire-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 
+    <section id="avis">
+        <div class="container">
+            <div class="avis-wrapper">
+                <div class="avis-logo"></div>
+                <div class="avis-texte">
+                    <div class="avis-name">
+
+                    </div>
+                    <div class="avis-comment">
+
+                    </div>
+                    <div class="avis-etoile">
+
+                    </div>
+                    <div class="avis-date">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+-->
 
 
 <?php
