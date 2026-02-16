@@ -1,2 +1,11 @@
-# website-lafeecaramel
-Création d'un site internet maison sans IA pour une esthéticienne.
+Client : 
+
+- Objesctif du site 
+- LE design souhaité : ( Couleur, texte ...)
+- Architecture du site : ( Pages, quelle section ? )
+
+La redaction pour chacune des sections. 
+
+
+
+

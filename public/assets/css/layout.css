@@ -1,4 +1,6 @@
-
+html {
+    scroll-padding-top: 110px;
+}
 /* ===========================
    HEADER & NAVBAR
    =========================== */
@@ -78,66 +80,193 @@ header .nav-links a {
 
 
 /* ===========================
-    FOOTER
+   FOOTER
    =========================== */
 
-
-
 footer {
+    margin-top: 80px;
     background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    margin-top: 40px;
-    padding-top: 40px;
-    b
+    border-top: 1px solid var(--color-border);
 }
 
+/* ===========================
+   NAVBAR STRUCTURE
+   =========================== */
+
 footer .navbar {
-    height: 100px;
-    display: flex;
-    align-items: center;
+    padding: 20px 0;
 }
 
 footer .navbar .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    align-items: flex-start;
+    gap: 60px;
 }
 
-footer .navbar .container .logo .logo-fee img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-}
-
-footer .navbar .container .bloc-link .reseau img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-}
+/* ===========================
+   COLONNE GAUCHE
+   LOGO + INFOS
+   =========================== */
 
 footer .logo {
     display: flex;
-    align-items: center;
-    gap: 15px;
+    gap: 20px;
+    align-items: flex-start;
+    max-width: 300px;
 }
+
+footer .logo-fee img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid var(--color-border);
+}
+
+footer .footer-brand h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: var(--color-dark);
+}
+
+footer .footer-brand p {
+    font-size: 0.9em;
+    color: var(--color-gray);
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+/* ===========================
+   COLONNE CENTRE
+   A PROPOS
+   =========================== */
+
+.footer-about {
+    max-width: 280px;
+}
+
+.footer-about h3 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: var(--color-primary);
+    position: relative;
+    text-align: center;
+
+}
+
+.footer-about p {
+    font-size: 0.9em;
+    color: var(--color-gray);
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* ===========================
+   COLONNE DROITE
+   LIENS + RESEAUX
+   =========================== */
 
 footer .bloc-link {
     display: flex;
-    align-items: center;
-    gap: 15px;
+    gap: 40px;
+    align-items: flex-start;
 }
 
-footer .link {
+/* Réseau */
+
+footer .reseau img {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+
+}
+
+
+/* Liens */
+
+footer .link ul {
     display: flex;
-    align-items: center;
-    gap: 15px;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer .link a {
+    font-size: 0.9em;
+    color: var(--color-dark);
+
+}
+
+/* ===========================
+   FOOTER BOTTOM
+   =========================== */
+
+.footer-bottom {
+    border-top: 1px solid var(--color-border);
+    padding: 20px 0;
+    background-color: var(--color-light);
+}
+
+.footer-bottom p {
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--color-gray);
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 900px) {
+
+    footer .navbar .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    footer .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .bloc-link {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .footer-about {
+        max-width: 100%;
+    }
+}
+
+/* ===========================
+   RESPONSIVE HEADER
+   =========================== */
+
+@media (max-width: 900px) {
+
+    header .navbar {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    header .navbar .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
 }

@@ -12,6 +12,7 @@
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#prestations">Prestations</a></li>
                 <li><a href="#produits">Produits</a></li>
+                <li><a href="#histoire">Mon histoire</a></li>
                 <li><a href="#galerie">Galerie</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>

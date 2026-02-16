@@ -40,17 +40,17 @@ require_once __DIR__ . '/../includes/header.php';
                 <div class="card">
                     <h3>Épilations</h3>
                     <p>Découvrez nos services d'épilation pour une peau douce et lisse.</p>
-                    <a class="btn btn-primary" href="#contact">Cliquez-ici</a>
+                    <a class="btn btn-primary" href="prestations_epilation.php">Cliquez-ici</a>
                 </div>
                 <div class="card">
                     <h3>Spécialités</h3>
                     <p>Nos spécialités de soins naturels pour un bien-être optimal.</p>
-                    <a class="btn btn-primary" href="#contact">Cliquez-ici</a>
+                    <a class="btn btn-primary" href="prestations_specialites.php">Cliquez-ici</a>
                 </div>
                 <div class="card">
                     <h3>Bien-être</h3>
                     <p>Offrez-vous un moment de détente avec nos soins de bien-être.</p>
-                    <a class="btn btn-primary" href="#contact">Cliquez-ici</a>
+                    <a class="btn btn-primary" href="prestations_bienetre.php">Cliquez-ici</a>
                 </div>
             </div>
         </div>
@@ -133,30 +133,84 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
     </section>
 
-<!-- 
     <section id="avis">
         <div class="container">
+            <h2>Avis clients</h2>
+
             <div class="avis-wrapper">
-                <div class="avis-logo"></div>
-                <div class="avis-texte">
-                    <div class="avis-name">
 
-                    </div>
-                    <div class="avis-comment">
+                <div class="avis-card">
 
+                    <div class="avis-header">
+                        <div class="avis-logo">RC</div>
+                        <div>
+                            <div class="avis-name">Rene Couverture</div>
+                            <div class="avis-date">Avis Google</div>
+                        </div>
                     </div>
+
                     <div class="avis-etoile">
-
+                        ★★★★★
                     </div>
-                    <div class="avis-date">
 
+                    <div class="avis-comment">
+                        Il n'a pas mis de commentaire.
                     </div>
+
                 </div>
 
             </div>
         </div>
     </section>
--->
+
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <p class="contact-intro">
+                        Une question ? Une prise de rendez-vous ?  
+                        Je vous réponds avec plaisir.
+                    </p>
+
+                    <div class="contact-details">
+                        <p><strong>Téléphone :</strong> 06 70 37 81 74</p>
+                        <p><strong>Email :</strong> lafeecaramel13580@gmail.com</p>
+                        <p><strong>Adresse :</strong> La Fare-les-Oliviers</p>
+                    </div>
+
+                    <p class="contact-note">
+                        Je vous accueille sur rendez-vous dans une ambiance chaleureuse et apaisante.
+                    </p>
+                </div>
+
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
 <?php
